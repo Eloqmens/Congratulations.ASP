@@ -123,8 +123,6 @@ namespace Congratulations.Service.Implementations
             }
         }
 
-
-
         public async Task<BaseResponse<Dictionary<int, string>>> GetUser(string term)
         {
             var baseResponse = new BaseResponse<Dictionary<int, string>>();

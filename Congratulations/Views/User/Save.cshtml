@@ -2,6 +2,11 @@
 @{
     ViewData["Title"] = "Save";
 }
+@{
+    var textTitle = Model?.Id == 0 ? "Изменение данных" : "Добавление данных";
+}
+
+
 
 <form asp-action="Save" enctype="multipart/form-data">
     <input asp-for="Id" hidden />

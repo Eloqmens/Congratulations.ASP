@@ -56,7 +56,6 @@ namespace Congratulations.Controllers
         public async Task<IActionResult> Save(UserViewModel model)
         {
             ModelState.Remove("Id");
-            ModelState.Remove("DateCreate");
             if (ModelState.IsValid)
             {
                 if (model.Id == 0)
