@@ -73,7 +73,7 @@ namespace Congratulations.Controllers
                     await _userService.EditUser(model.Id, model);
                 }
             }
-            return RedirectToAction("GetCars");
+            return RedirectToAction("GetUsers");
         }
 
     }
